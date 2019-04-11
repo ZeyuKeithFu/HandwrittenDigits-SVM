@@ -9,6 +9,6 @@ For K classes, only K classifiers are trained. Each classifier can tell if a tra
    
 Comparing the prediction result and true labels of testing examples, we can compute the accuracy of the multi-class SVM classifier. Using [confusion matrix](https://en.wikipedia.org/wiki/Confusion_matrix) is a good way to show the result and also visualize it. An observation is that one-versus-one scheme gets a better accuracy.   
 * Accuracy of ```One versus one``` scheme : ```0.943```
-![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/Gaussian%20Kernel%20SVM/SVM_RBF_OVO.png)
+![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/SVM_RBF_OVO.png)
 * Accuracy of ```One versus the rest``` scheme : ```0.876```
-![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/Gaussian%20Kernel%20SVM/SVM_RBF_OVR.png)   
+![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/SVM_RBF_OVR.png)   
