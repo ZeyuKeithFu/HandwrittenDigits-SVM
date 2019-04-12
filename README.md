@@ -12,3 +12,7 @@ Comparing the prediction result and true labels of testing examples, we can comp
 ![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/SVM_RBF_OVO.png)
 * Accuracy of ```One versus the rest``` scheme : ```0.876```
 ![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/SVM_RBF_OVR.png)   
+## DAG SVM
+Besides the two voting schemes, another optional approach for multi-class classification can be [DAG decision tree](https://pdfs.semanticscholar.org/3248/4f6d111bf21f1395a34a087991a9041dd0ae.pdf?_ga=2.200509230.142700129.1555089255-1553376689.1555089255). DAG SVM is similar to one-versus-one scheme. Instead of voting to the positive class, DAG will always drop the negative class and follow a decision trace of length K (number of classes). By implementing DAG SVM, the accuracy rise about 0.1%.    
+* Moreover, when the sigma parameter in Gaussian kernel is tuned to 10 and the soft margin parameter "C" is tuned to 10, the multi-class classifier amazingly achieves a 100% accuracy over the 1,000 testing examples.   
+![](https://github.com/ZeyuKeithFu/HandwrittenDigits-SVM/blob/master/DAGSVM_RBF.png)
